@@ -1,0 +1,9 @@
+* { margin: 0; padding: 0; }
+
+.cl1 { width: 400px; position: absolute; border: 1px #ccc solid; padding: 10px; left: 200px; }
+.cl1 ul { line-height: 100px; }
+.cl1 ul .list4 { padding-left: 20px; position: relative; }
+.cl1 ul .list4 ul { position: absolute; left: 200px; line-height: 30px; top: 0; }
+.cl1 ul .list4 ul li { width: 70px; float: left; }
+
+/*# sourceMappingURL=a.css.map */

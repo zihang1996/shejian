@@ -1,0 +1,104 @@
+%slh{
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+@mixin pos($p:absolute){
+    position:$p;
+}
+.cd1{
+    width:100%;
+    li{
+        width:100%;
+        height:38px;
+        line-height:38px;
+        &:nth-child(1){
+            color:#ccc;
+            padding:0 0 0 45px;
+        }
+        a{
+            padding:0 0 0 45px;
+            display:inline-block;
+            &:hover{
+                color:#DD3915;
+            }
+        }
+        &.open{
+            background:#EBE9E7;
+            }
+        }
+}
+ .cd-u{
+                width:100%;
+                li{
+                    width:100%;
+                    height:138px;
+                    margin:0 0 20px;
+                        div{
+                            width:100%;
+                             height:138px;
+                            float:left;
+                            &:nth-child(1){
+                                width:215px;
+                                height:136px;
+                            }
+                            &:nth-child(2){
+                                margin:0 0 0 10px;
+                                width:300px;
+                                height:136px;
+                                
+                                p{
+                                    margin:10px 0;
+                                    a{
+                                        display:inline-block;
+                                        
+                                        &:hover{
+                                            color:#DD3915;
+                                        }
+                                    }
+                                }
+                                p:nth-child(1){
+                                    font-size:20px;
+                                    font-weight:700;
+                                   a{
+                                       width:100%;
+                                       @extend %slh;
+                                       padding-right:30px;
+                                   }
+                                }
+                               
+                                p:nth-child(2),p:nth-child(3){
+                                    color:#909090;
+                                }
+                                p:not(:first-child){
+                                    font-size:14px;
+                                }
+                                p:nth-child(2){
+                                    span{
+                                        color:#72A46D;
+                                        font-weight:700;
+                                    }
+                                }
+                            }
+                        }
+                        
+                    
+                }
+        }
+        .se-right{
+            margin:30px 0 0 50px;
+            @include pos(relative);
+            padding:0;
+            .r-title{
+                @include pos(relative);
+                h2{
+                   @include pos(); 
+                   left:-50px;
+                }
+                a{
+                    display:inline-block;
+                    @include pos();
+                    right:-100px;
+                }
+            }
+        }

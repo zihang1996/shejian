@@ -1,0 +1,226 @@
+.cd-u li div:nth-child(2) p:nth-child(1) a { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
+
+* { margin: 0; padding: 0; }
+
+li { list-style: none; }
+
+a { text-decoration: none; }
+
+.cd1 { width: 100%; }
+.cd1 li { width: 100%; height: 38px; line-height: 38px; }
+.cd1 li:nth-child(1) { color: #ccc; padding: 0 0 0 45px; }
+.cd1 li a { padding: 0 0 0 45px; display: inline-block; }
+.cd1 li a:hover { color: #DD3915; }
+.cd1 li.open { background: #EBE9E7; }
+
+.cd-u { width: 100%; }
+.cd-u li { width: 100%; height: 138px; margin: 0 0 20px; }
+.cd-u li div { width: 100%; height: 138px; float: left; }
+.cd-u li div:nth-child(1) { width: 215px; height: 136px; }
+.cd-u li div:nth-child(2) { margin: 0 0 0 10px; width: 300px; height: 136px; }
+.cd-u li div:nth-child(2) p { margin: 10px 0; }
+.cd-u li div:nth-child(2) p a { display: inline-block; }
+.cd-u li div:nth-child(2) p a:hover { color: #DD3915; }
+.cd-u li div:nth-child(2) p:nth-child(1) { font-size: 20px; font-weight: 700; }
+.cd-u li div:nth-child(2) p:nth-child(1) a { width: 100%; padding-right: 30px; }
+.cd-u li div:nth-child(2) p:nth-child(2), .cd-u li div:nth-child(2) p:nth-child(3) { color: #909090; }
+.cd-u li div:nth-child(2) p:not(:first-child) { font-size: 14px; }
+.cd-u li div:nth-child(2) p:nth-child(2) span { color: #72A46D; font-weight: 700; }
+
+.se-right { margin: 30px 0 0 50px; position: relative; padding: 0; }
+.se-right .r-title { position: relative; }
+.se-right .r-title h2 { position: absolute; left: -50px; }
+.se-right .r-title a { display: inline-block; position: absolute; right: -100px; }
+
+.content { width: 1200px; height: 100%; padding-top: 70px; margin: 0 auto; }
+.content .mini_content { width: 1200px; margin: 0 auto; }
+.content .mini_content .content_type { width: 1200px; height: 100px; line-height: 100px; }
+.content .mini_content .content_type p { font-size: 35px; }
+.content .mini_content .content_tab { width: 1200px; background: #eee; }
+.content .mini_content .content_tab .tab1 { width: 1200px; height: 380px; }
+.content .mini_content .content_tab .tab1 .tab1_tit { width: 200px; height: 380px; margin-left: 50px; float: left; }
+.content .mini_content .content_tab .tab1 .tab1_tit h3 { margin-top: 40px; }
+.content .mini_content .content_tab .tab1 .tab1_inner1 { width: 500px; height: 300px; padding: 40px 0; float: left; display: flex; justify-content: flex-start; flex-wrap: wrap; }
+.content .mini_content .content_tab .tab1 .tab1_inner1 ul { width: 250px; display: flex; flex-direction: column; margin-bottom: 40px; }
+.content .mini_content .content_tab .tab1 .tab1_inner1 ul li { color: #ccc; }
+.content .mini_content .content_tab .tab1 .tab1_inner1 ul li a { color: black; }
+.content .mini_content .content_tab .tab1 .tab1_inner1 ul li:not(:last-child) { margin-bottom: 10px; }
+.content .mini_content .content_tab .tab1 .tab1_inner2 { width: 300px; height: 300px; padding: 40px 0; float: left; display: flex; flex-direction: column; position: relative; }
+.content .mini_content .content_tab .tab1 .tab1_inner2 li { width: 300px; margin-bottom: 10px; color: #ccc; }
+.content .mini_content .content_tab .tab1 .tab1_inner2 li a { color: black; }
+.content .mini_content .content_tab .tab1 .tab1_inner2 span { position: absolute; bottom: 0; right: 0; padding: 5px; }
+.content .mini_content .content_tab .tab1_mini { width: 1200px; height: 780px; display: none; }
+.content .mini_content .content_tab .tab1_mini .tab1_tit { width: 200px; height: 780px; float: left; padding-left: 50px; }
+.content .mini_content .content_tab .tab1_mini .tab1_tit h3 { margin-top: 40px; }
+.content .mini_content .content_tab .tab1_mini .tab1_inner1 { width: 950px; height: 740px; float: left; display: flex; flex-direction: column; padding-top: 40px; position: relative; }
+.content .mini_content .content_tab .tab1_mini .tab1_inner1 ul { width: 100%; }
+.content .mini_content .content_tab .tab1_mini .tab1_inner1 ul div { color: #ccc; padding-bottom: 20px; }
+.content .mini_content .content_tab .tab1_mini .tab1_inner1 ul ul { width: 690px; color: #ccc; margin-right: 0 260px 20px 0; }
+.content .mini_content .content_tab .tab1_mini .tab1_inner1 ul ul li { width: 20%; margin-bottom: 20px; float: left; }
+.content .mini_content .content_tab .tab1_mini .tab1_inner1 ul ul li a { color: black; }
+.content .mini_content .content_tab .tab1_mini .tab1_inner1 span { position: absolute; right: 200px; bottom: 20px; }
+.content .mini_content .content_tab .tab3 { width: 1200px; height: 340px; }
+.content .mini_content .content_tab .tab3 .tab3_tit { width: 200px; height: 340px; margin-left: 50px; float: left; }
+.content .mini_content .content_tab .tab3 .tab3_tit h3 { margin-top: 40px; }
+.content .mini_content .content_tab .tab3 .tab3_inner1 { width: 500px; height: 260px; padding: 40px 0; float: left; display: flex; justify-content: flex-start; }
+.content .mini_content .content_tab .tab3 .tab3_inner1 ul { width: 250px; display: flex; flex-direction: column; margin-bottom: 40px; }
+.content .mini_content .content_tab .tab3 .tab3_inner1 ul li { margin-bottom: 10px; color: #eee; }
+.content .mini_content .content_tab .tab3 .tab3_inner1 ul li a { color: black; }
+.content .mini_content .content_tab .tab3 .tab3_inner2 { width: 300px; height: 260px; padding: 40px 0; float: left; display: flex; flex-direction: column; position: relative; }
+.content .mini_content .content_tab .tab3 .tab3_inner2 li { width: 300px; margin-bottom: 10px; }
+.content .mini_content .content_tab .tab3 .tab3_inner2 li a { color: black; }
+.content .mini_content .content_tab .tab3 .tab3_inner2 span { position: absolute; bottom: 0; right: 0; padding: 5px; }
+.content .mini_content .content_tab .tab3_mini { width: 1200px; height: 860px; display: none; }
+.content .mini_content .content_tab .tab3_mini .tab3_tit { width: 200px; height: 860px; float: left; padding-left: 50px; }
+.content .mini_content .content_tab .tab3_mini .tab3_tit h3 { margin-top: 40px; }
+.content .mini_content .content_tab .tab3_mini .tab3_inner1 { width: 950px; height: 820px; float: left; display: flex; flex-direction: column; padding-top: 40px; position: relative; }
+.content .mini_content .content_tab .tab3_mini .tab3_inner1 ul { width: 100%; }
+.content .mini_content .content_tab .tab3_mini .tab3_inner1 ul div { color: #ccc; padding-bottom: 20px; }
+.content .mini_content .content_tab .tab3_mini .tab3_inner1 ul ul { width: 690px; color: #ccc; margin-right: 0 260px 20px 0; }
+.content .mini_content .content_tab .tab3_mini .tab3_inner1 ul ul li { width: 20%; margin-bottom: 20px; float: left; }
+.content .mini_content .content_tab .tab3_mini .tab3_inner1 ul ul li a { color: black; }
+.content .mini_content .content_tab .tab3_mini .tab3_inner1 span { position: absolute; right: 200px; bottom: 20px; }
+.content .mini_content .content_tab .tab4 { width: 1200px; height: 380px; }
+.content .mini_content .content_tab .tab4 .tab4_tit { width: 200px; height: 380px; margin-left: 50px; float: left; }
+.content .mini_content .content_tab .tab4 .tab4_tit h3 { margin-top: 40px; }
+.content .mini_content .content_tab .tab4 .tab4_inner1 { width: 500px; height: 300px; padding: 40px 0; float: left; display: flex; justify-content: flex-start; }
+.content .mini_content .content_tab .tab4 .tab4_inner1 ul { width: 250px; display: flex; flex-direction: column; margin-bottom: 40px; }
+.content .mini_content .content_tab .tab4 .tab4_inner1 ul li { margin-bottom: 10px; color: #ccc; }
+.content .mini_content .content_tab .tab4 .tab4_inner1 ul li a { color: black; }
+.content .mini_content .content_tab .tab4 .tab4_inner2 { width: 300px; height: 300px; padding: 40px 0; float: left; display: flex; flex-direction: column; position: relative; }
+.content .mini_content .content_tab .tab4 .tab4_inner2 li { width: 300px; margin-bottom: 10px; color: #ccc; }
+.content .mini_content .content_tab .tab4 .tab4_inner2 li a { color: black; }
+.content .mini_content .content_tab .tab4 .tab4_inner2 span { position: absolute; bottom: 0; right: 0; padding: 5px; }
+.content .mini_content .content_tab .tab4_mini { width: 1200px; height: 1780px; display: none; }
+.content .mini_content .content_tab .tab4_mini .tab4_tit { width: 200px; height: 1780px; float: left; padding-left: 50px; }
+.content .mini_content .content_tab .tab4_mini .tab4_tit h3 { margin-top: 40px; }
+.content .mini_content .content_tab .tab4_mini .tab4_inner1 { width: 950px; height: 1740px; float: left; display: flex; flex-direction: column; padding-top: 40px; position: relative; }
+.content .mini_content .content_tab .tab4_mini .tab4_inner1 ul { width: 100%; }
+.content .mini_content .content_tab .tab4_mini .tab4_inner1 ul div { color: #ccc; padding-bottom: 20px; }
+.content .mini_content .content_tab .tab4_mini .tab4_inner1 ul ul { width: 690px; color: #ccc; margin-right: 0 260px 20px 0; }
+.content .mini_content .content_tab .tab4_mini .tab4_inner1 ul ul li { width: 20%; margin-bottom: 20px; float: left; }
+.content .mini_content .content_tab .tab4_mini .tab4_inner1 ul ul li a { color: black; }
+.content .mini_content .content_tab .tab4_mini .tab4_inner1 span { position: absolute; right: 200px; bottom: 20px; }
+.content .mini_content .content_tab .tab5 { width: 1200px; height: 200px; }
+.content .mini_content .content_tab .tab5 .tab5_tit { width: 200px; height: 200px; margin-left: 50px; float: left; }
+.content .mini_content .content_tab .tab5 .tab5_tit h3 { margin-top: 40px; }
+.content .mini_content .content_tab .tab5 .tab5_inner1 { width: 500px; height: 120px; padding: 40px 0; float: left; display: flex; justify-content: flex-start; flex-wrap: wrap; }
+.content .mini_content .content_tab .tab5 .tab5_inner1 ul { width: 250px; display: flex; flex-direction: column; margin-bottom: 40px; }
+.content .mini_content .content_tab .tab5 .tab5_inner1 ul li { margin-bottom: 10px; color: #ccc; }
+.content .mini_content .content_tab .tab5 .tab5_inner1 ul li a { color: black; }
+.content .mini_content .content_tab .tab5 .tab5_inner2 { width: 300px; height: 120px; padding: 40px 0; float: left; display: flex; flex-direction: column; position: relative; }
+.content .mini_content .content_tab .tab5 .tab5_inner2 li { width: 300px; margin-bottom: 10px; color: #ccc; }
+.content .mini_content .content_tab .tab5 .tab5_inner2 li a { color: black; }
+.content .mini_content .content_tab .tab5 .tab5_inner2 span { position: absolute; bottom: 0; right: 0; padding: 5px; }
+.content .mini_content .content_tab .tab5_mini { width: 1200px; height: 300px; display: none; }
+.content .mini_content .content_tab .tab5_mini .tab5_tit { width: 200px; height: 300px; float: left; padding-left: 50px; }
+.content .mini_content .content_tab .tab5_mini .tab5_tit h3 { margin-top: 40px; }
+.content .mini_content .content_tab .tab5_mini .tab5_inner1 { width: 950px; height: 260px; float: left; display: flex; flex-direction: column; padding-top: 40px; position: relative; }
+.content .mini_content .content_tab .tab5_mini .tab5_inner1 ul { width: 100%; }
+.content .mini_content .content_tab .tab5_mini .tab5_inner1 ul div { color: #ccc; padding-bottom: 20px; }
+.content .mini_content .content_tab .tab5_mini .tab5_inner1 ul ul { width: 690px; color: #ccc; margin-right: 0 260px 20px 0; }
+.content .mini_content .content_tab .tab5_mini .tab5_inner1 ul ul li { width: 20%; margin-bottom: 20px; float: left; }
+.content .mini_content .content_tab .tab5_mini .tab5_inner1 ul ul li a { color: black; }
+.content .mini_content .content_tab .tab5_mini .tab5_inner1 span { position: absolute; right: 200px; bottom: 20px; }
+.content .mini_content .content_tab .tab6 { width: 1200px; height: 380px; }
+.content .mini_content .content_tab .tab6 .tab6_tit { width: 200px; height: 380px; margin-left: 50px; float: left; }
+.content .mini_content .content_tab .tab6 .tab6_tit h3 { margin-top: 40px; }
+.content .mini_content .content_tab .tab6 .tab6_inner1 { width: 500px; height: 300px; padding: 40px 0; float: left; display: flex; justify-content: flex-start; flex-wrap: wrap; }
+.content .mini_content .content_tab .tab6 .tab6_inner1 ul { width: 250px; display: flex; flex-direction: column; margin-bottom: 40px; }
+.content .mini_content .content_tab .tab6 .tab6_inner1 ul li { margin-bottom: 10px; color: #ccc; }
+.content .mini_content .content_tab .tab6 .tab6_inner1 ul li a { color: black; }
+.content .mini_content .content_tab .tab6 .tab6_inner2 { width: 300px; height: 300px; padding: 40px 0; float: left; display: flex; flex-direction: column; position: relative; }
+.content .mini_content .content_tab .tab6 .tab6_inner2 li { width: 300px; margin-bottom: 10px; color: #ccc; }
+.content .mini_content .content_tab .tab6 .tab6_inner2 li a { color: black; }
+.content .mini_content .content_tab .tab6 .tab6_inner2 span { position: absolute; bottom: 0; right: 0; padding: 5px; }
+.content .mini_content .content_tab .tab6_mini { width: 1200px; height: 500px; display: none; }
+.content .mini_content .content_tab .tab6_mini .tab6_tit { width: 200px; height: 500px; float: left; padding-left: 50px; }
+.content .mini_content .content_tab .tab6_mini .tab6_tit h3 { margin-top: 40px; }
+.content .mini_content .content_tab .tab6_mini .tab6_inner1 { width: 950px; height: 460px; float: left; display: flex; flex-direction: column; padding-top: 40px; position: relative; }
+.content .mini_content .content_tab .tab6_mini .tab6_inner1 ul { width: 100%; }
+.content .mini_content .content_tab .tab6_mini .tab6_inner1 ul div { color: #ccc; padding-bottom: 20px; }
+.content .mini_content .content_tab .tab6_mini .tab6_inner1 ul ul { width: 690px; color: #ccc; margin-right: 0 260px 20px 0; }
+.content .mini_content .content_tab .tab6_mini .tab6_inner1 ul ul li { width: 20%; margin-bottom: 20px; float: left; }
+.content .mini_content .content_tab .tab6_mini .tab6_inner1 ul ul li a { color: black; }
+.content .mini_content .content_tab .tab6_mini .tab6_inner1 span { position: absolute; right: 200px; bottom: 20px; }
+.content .mini_content .content_tab .tab7 { width: 1200px; height: 380px; }
+.content .mini_content .content_tab .tab7 .tab7_tit { width: 200px; height: 380px; margin-left: 50px; float: left; }
+.content .mini_content .content_tab .tab7 .tab7_tit h3 { margin-top: 40px; }
+.content .mini_content .content_tab .tab7 .tab7_inner1 { width: 500px; height: 300px; padding: 40px 0; float: left; display: flex; justify-content: flex-start; }
+.content .mini_content .content_tab .tab7 .tab7_inner1 ul { width: 250px; display: flex; flex-direction: column; margin-bottom: 40px; }
+.content .mini_content .content_tab .tab7 .tab7_inner1 ul li { margin-bottom: 10px; color: #ccc; }
+.content .mini_content .content_tab .tab7 .tab7_inner1 ul li a { color: black; }
+.content .mini_content .content_tab .tab7 .tab7_inner2 { width: 300px; height: 300px; padding: 40px 0; float: left; display: flex; flex-direction: column; position: relative; }
+.content .mini_content .content_tab .tab7 .tab7_inner2 li { width: 300px; margin-bottom: 10px; color: #ccc; }
+.content .mini_content .content_tab .tab7 .tab7_inner2 li a { color: black; }
+.content .mini_content .content_tab .tab7 .tab7_inner2 span { position: absolute; bottom: 0; right: 0; padding: 5px; }
+.content .mini_content .content_tab .tab7_mini { width: 1200px; height: 600px; display: none; }
+.content .mini_content .content_tab .tab7_mini .tab7_tit { width: 200px; height: 600px; float: left; padding-left: 50px; }
+.content .mini_content .content_tab .tab7_mini .tab7_tit h3 { margin-top: 40px; }
+.content .mini_content .content_tab .tab7_mini .tab7_inner1 { width: 950px; height: 560px; float: left; display: flex; flex-direction: column; padding-top: 40px; position: relative; }
+.content .mini_content .content_tab .tab7_mini .tab7_inner1 ul { width: 100%; }
+.content .mini_content .content_tab .tab7_mini .tab7_inner1 ul div { color: #ccc; padding-bottom: 20px; }
+.content .mini_content .content_tab .tab7_mini .tab7_inner1 ul ul { width: 690px; color: #ccc; margin-right: 0 260px 20px 0; }
+.content .mini_content .content_tab .tab7_mini .tab7_inner1 ul ul li { width: 20%; margin-bottom: 20px; float: left; }
+.content .mini_content .content_tab .tab7_mini .tab7_inner1 ul ul li a { color: black; }
+.content .mini_content .content_tab .tab7_mini .tab7_inner1 span { position: absolute; right: 200px; bottom: 20px; }
+.content .mini_content .content_tab .tab8 { width: 1200px; height: 380px; }
+.content .mini_content .content_tab .tab8 .tab8_tit { width: 200px; height: 380px; margin-left: 50px; float: left; }
+.content .mini_content .content_tab .tab8 .tab8_tit h3 { margin-top: 40px; }
+.content .mini_content .content_tab .tab8 .tab8_inner1 { width: 500px; height: 300px; padding: 40px 0; float: left; display: flex; justify-content: flex-start; }
+.content .mini_content .content_tab .tab8 .tab8_inner1 ul { width: 250px; display: flex; flex-direction: column; margin-bottom: 40px; }
+.content .mini_content .content_tab .tab8 .tab8_inner1 ul li { margin-bottom: 10px; color: #ccc; }
+.content .mini_content .content_tab .tab8 .tab8_inner1 ul li a { color: black; }
+.content .mini_content .content_tab .tab8 .tab8_inner2 { width: 300px; height: 300px; padding: 40px 0; float: left; display: flex; flex-direction: column; position: relative; }
+.content .mini_content .content_tab .tab8 .tab8_inner2 li { width: 300px; margin-bottom: 10px; color: #ccc; }
+.content .mini_content .content_tab .tab8 .tab8_inner2 li a { color: black; }
+.content .mini_content .content_tab .tab8 .tab8_inner2 span { position: absolute; bottom: 0; right: 0; padding: 5px; }
+.content .mini_content .content_tab .tab8_mini { width: 1200px; height: 600px; display: none; }
+.content .mini_content .content_tab .tab8_mini .tab8_tit { width: 200px; height: 600px; float: left; padding-left: 50px; }
+.content .mini_content .content_tab .tab8_mini .tab8_tit h3 { margin-top: 40px; }
+.content .mini_content .content_tab .tab8_mini .tab8_inner1 { width: 950px; height: 560px; float: left; display: flex; flex-direction: column; padding-top: 40px; position: relative; }
+.content .mini_content .content_tab .tab8_mini .tab8_inner1 ul { width: 100%; }
+.content .mini_content .content_tab .tab8_mini .tab8_inner1 ul div { color: #ccc; padding-bottom: 20px; }
+.content .mini_content .content_tab .tab8_mini .tab8_inner1 ul ul { width: 690px; color: #ccc; margin-right: 0 260px 20px 0; }
+.content .mini_content .content_tab .tab8_mini .tab8_inner1 ul ul li { width: 20%; margin-bottom: 20px; float: left; }
+.content .mini_content .content_tab .tab8_mini .tab8_inner1 ul ul li a { color: black; }
+.content .mini_content .content_tab .tab8_mini .tab8_inner1 span { position: absolute; right: 200px; bottom: 20px; }
+.content .mini_content .content_tab .tab9 { width: 1200px; height: 380px; }
+.content .mini_content .content_tab .tab9 .tab9_tit { width: 200px; height: 380px; margin-left: 50px; float: left; }
+.content .mini_content .content_tab .tab9 .tab9_tit h3 { margin-top: 40px; }
+.content .mini_content .content_tab .tab9 .tab9_inner1 { width: 500px; height: 300px; padding: 40px 0; float: left; display: flex; justify-content: flex-start; }
+.content .mini_content .content_tab .tab9 .tab9_inner1 ul { width: 250px; display: flex; flex-direction: column; margin-bottom: 40px; }
+.content .mini_content .content_tab .tab9 .tab9_inner1 ul li { margin-bottom: 10px; color: #ccc; }
+.content .mini_content .content_tab .tab9 .tab9_inner1 ul li a { color: black; }
+.content .mini_content .content_tab .tab9 .tab9_inner2 { width: 300px; height: 300px; padding: 40px 0; float: left; display: flex; flex-direction: column; position: relative; }
+.content .mini_content .content_tab .tab9 .tab9_inner2 li { width: 300px; margin-bottom: 10px; color: #ccc; }
+.content .mini_content .content_tab .tab9 .tab9_inner2 li a { color: black; }
+.content .mini_content .content_tab .tab9 .tab9_inner2 span { position: absolute; bottom: 0; right: 0; padding: 5px; }
+.content .mini_content .content_tab .tab9_mini { width: 1200px; height: 1200px; display: none; }
+.content .mini_content .content_tab .tab9_mini .tab9_tit { width: 200px; height: 1200px; float: left; padding-left: 50px; }
+.content .mini_content .content_tab .tab9_mini .tab9_tit h3 { margin-top: 40px; }
+.content .mini_content .content_tab .tab9_mini .tab9_inner1 { width: 950px; height: 1160px; float: left; display: flex; flex-direction: column; padding-top: 40px; position: relative; }
+.content .mini_content .content_tab .tab9_mini .tab9_inner1 ul { width: 100%; }
+.content .mini_content .content_tab .tab9_mini .tab9_inner1 ul div { color: #ccc; padding-bottom: 20px; }
+.content .mini_content .content_tab .tab9_mini .tab9_inner1 ul ul { width: 690px; color: #ccc; margin-right: 0 260px 20px 0; }
+.content .mini_content .content_tab .tab9_mini .tab9_inner1 ul ul li { width: 20%; margin-bottom: 20px; float: left; }
+.content .mini_content .content_tab .tab9_mini .tab9_inner1 ul ul li a { color: black; }
+.content .mini_content .content_tab .tab9_mini .tab9_inner1 span { position: absolute; right: 200px; bottom: 20px; }
+
+.foot { width: 100%; height: 100%; }
+.foot .mini_foot { width: 1200px; height: 100%; margin: 50px auto 80px auto; }
+.foot .mini_foot .ad { width: 100%; height: 90px; margin: 25px 0; }
+.foot .mini_foot .ad img { width: 100%; height: 90px; }
+.foot .mini_foot .copy { width: 100%; height: 60px; }
+.foot .mini_foot .copy .copy_left { width: 600px; height: 60px; float: left; }
+.foot .mini_foot .copy .copy_left ul { width: 600px; }
+.foot .mini_foot .copy .copy_left ul li { font-size: 13px; margin-right: 10px; float: left; color: #ccc; }
+.foot .mini_foot .copy .copy_left ul li a { color: #ccc; }
+.foot .mini_foot .copy .copy_left p { font-size: 13px; margin-top: 20px; color: #ccc; }
+.foot .mini_foot .copy .copy_right { width: 150px; height: 60px; float: right; font-size: 13px; }
+.foot .mini_foot .copy .copy_right a:nth-of-type(1) { display: inline-block; padding: 5px; background: #eee; border: 1px #ccc solid; color: #1582BD; }
+.foot .mini_foot .copy .copy_right span:nth-of-type(1) { color: #FAF8EF; }
+.foot .mini_foot .copy .copy_right a:nth-of-type(2) { padding: 3px 10px; background: #FAF8EF; border: 1px yellow solid; font-size: 13px; color: black; }
+.foot .mini_foot .copy .copy_right p { margin-top: 5px; color: #ccc; }
+
+/*# sourceMappingURL=menu_class.css.map */

@@ -1,0 +1,954 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" href="img/logo/3.jpg" type="image/gif" />
+	<title>舌尖上的美食</title>
+	<link rel="stylesheet" href="css/index.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/jcc.css" />
+	<link rel="stylesheet" href="css/top.css" />
+	<script src="js/jquery-3.2.1.js"></script>
+	<script src="js/input.js"></script>
+	<script src="js/index.js"></script>
+</head>
+<body>
+	<div class="container">
+			<div class="t-nav" >
+				<div class="t-nav-d">
+					<img src="img/logo/1.jpg" alt="" />
+					<div class="ss">
+						<input type="text" id="txt" placeholder="搜索菜谱、食材" style="text-indent: 1em;border: 1px solid #e6e6e6; outline: none;" />
+						<a target="_blank" class="btn1" id="btn1" onclick="sub()"><span>搜菜谱</span></a>
+						<div id="show" style="width: 300px;position: absolute;left: 0px;top: 43px;background: #F7F7F7;"><span id="span"></span></div>
+					</div>
+					<ul class="t-nav-u">
+						<li><a href="index.html">首页</a></li>
+						<li>
+							<a href="menu_class.html">菜谱分类</a>
+							<div class="cpul">
+								<ul>
+									<li>常见主题</li>
+									<li><a href="#">家常菜</a></li>
+									<li><a href="#">快手菜</a></li>
+									<li><a href="#">下饭菜</a></li>
+									<li><a href="#">早餐</a></li>
+									<li><a href="#">减肥</a></li>
+									<li><a href="#">汤羹</a></li>
+									<li><a href="#">烘焙</a></li>
+									<li><a href="#">小吃</a></li>
+								</ul>
+								<ul>
+									<li>常见食材</li>
+									<li><a href="#">鸡肉</a></li>
+									<li><a href="#">猪肉</a></li>
+									<li><a href="#">牛肉</a></li>
+									<li><a href="#">鱼</a></li>
+									<li><a href="#">鸡蛋</a></li>
+									<li><a href="#">土豆</a></li>
+									<li><a href="#">茄子</a></li>
+									<li><a href="#">豆腐</a></li>
+								</ul>
+								<ul>
+									<li>时令食材</li>
+									<li><a href="#">小龙虾</a><strong>10.0</strong></li>
+									<li><a href="#">龙虾</a><strong>10.0</strong></li>
+									<li><a href="#">火龙果</a><strong>10.0</strong></li>
+									<li><a href="#">鸭腿</a><strong>10.0</strong></li>
+									<li><a href="#">笋</a><strong>10.0</strong></li>
+									<li><a href="#">干贝</a><strong>9.9</strong></li>
+									<li><a href="#">鸡爪</a><strong>9.9</strong></li>
+									<li><a href="#">春笋</a><strong>9.8</strong></li>
+								</ul>
+								<div><a href="menu_class.html">查看全部分类</a></div>
+							</div>	
+						</li>
+						<li><a href="caidan.html">菜单</a></li>
+						<li><a href="work_trends_mini.html">作品动态</a></li>
+					</ul>
+					<ul class="t-nav-l">
+						<li><a href="index(2).html">登录</a></li>
+						<li><a href="index(2).html">注册</a></li>
+					</ul>
+				</div>
+			</div>
+	<div class="clearbox">
+	</div>
+	<div class="nav">
+		<div class="left_1 floatleft">
+			<div class="left">
+				<ul class="leftlist">
+					<li>
+						<a href="jcc.html" target="_blank">
+							<span></span>
+							<span>家常菜</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span></span>
+							<span>快手菜</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span></span>
+							<span>下饭菜</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span></span>
+							<span>早餐</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span></span>
+							<span>肉</span>
+							<span>></span>
+						</a>
+						<div class="cl">
+							<ul>
+								<li class="list2">
+									<a href="#">豬肉</a>
+									<ul>
+										<li>排骨</li>
+										<li>五花肉</li>
+										<li>里脊</li>
+										<li>猪肉末</li>
+										<li>瘦肉</li>
+										<li>猪蹄</li>
+										<li>猪肝</li>
+										<li>更多</li>
+									</ul>
+								</li>
+								<li  class="list2">
+									<a href="#">鸡</a>
+									<ul>
+										<li>鸡腿</li>
+										<li>鸡翅</li>
+										<li>鸡肉</li>
+										<li>鸡爪</li>
+										<li>土鸡</li>
+										<li>三黄鸡</li>
+										<li>鸡胗</li>
+										<li>更多</li>
+									</ul>
+								</li>
+								<li  class="list2">
+									<a href="#">牛肉</a>
+									<ul>
+										<li>牛腩</li>
+										<li>肥牛</li>
+										<li>牛排</li>
+										<li>牛肉末</li>
+										<li>牛瘦肉</li>
+										<li>牛尾</li>
+										<li>牛筋</li>
+										<li>更多</li>
+									</ul>
+								</li>
+								<li  class="list2">
+									<a href="">鸭</a>
+									<ul>
+										<li>鸭腿</li>
+										<li>鸭翅</li>
+										<li>鸭胗</li>
+										<li>鸭掌</li>
+										<li>老鸭</li>
+										<li>鸭脖</li>
+										<li>鸭舌</li>
+										<li>更多</li>
+									</ul>
+								</li>
+								<li  class="list2">
+									<a href="">羊肉</a>
+									<ul>
+										<li>羊腿</li>
+										<li>羊肉片</li>
+										<li>羊排</li>
+										<li>羊蝎子</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+	
+						
+					</li>
+					<li>
+						<a href="#">
+							<span></span>
+							<span>鱼</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span></span>
+							<span>蔬菜</span>
+							<span>></span>
+							<div class="cl">
+			<ul>
+				<li class="list3">
+					<a href="">果实类蔬菜</a>
+					<ul>
+						
+						<li>茄子</li>
+						<li>番茄</li>
+						<li>玉米</li>
+						<li>南瓜</li>
+						<li>丝瓜</li>
+						<li>冬瓜</li>
+						<li>豆角</li>
+						<li>更多</li>
+					</ul>
+				</li>
+				<li class="list3">
+					<a href="">根茎蔬菜</a>
+					<ul>
+
+						<li>土豆</li>
+						<li>萝卜</li>
+						<li>藕</li>
+						<li>山药</li>
+						<li>笋</li>
+						<li>红薯</li>
+						<li>芋头</li>
+						<li>更多</li>
+					</ul>
+				</li>
+				<li class="list3">
+					<a href="">菌菇类</a>
+					<ul>
+						<li>香菇</li>
+						<li>杏鲍菇</li>
+						<li>金针菇</li>
+						<li>茶树菇</li>
+						<li>牛瘦肉</li>
+						<li>猴头菇</li>
+						<li>平菇</li>
+						<li>更多</li>
+					</ul>
+				</li>
+				<li class="list3">
+					<a href="">叶类蔬菜 </a>
+					<ul>
+						<li>韭菜</li>
+						<li>菠菜</li>
+						<li>圆白菜</li>
+						<li>油菜</li>
+						<li>娃娃菜</li>
+						<li>空心菜</li>
+						<li>油麦菜</li>
+						<li>更多</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span></span>
+							<span>鸡蛋</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span></span>
+							<span>汤羹</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span></span>
+							<span>烘焙</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span></span>
+							<span>松下烘焙魔法世界</span>
+							<span>></span>
+						</a>
+						<!--<div class="cl1">
+							<ul>
+								<li class="list4">
+									<a href="">松下烘焙魔法世界</a>
+									<ul class="pp">
+										 
+										<li>蒸烤箱</li>
+										<li>面包机</li>
+										<li>电烤箱</li>
+										<li>电饭煲</li>
+										<li>电压力锅</li>
+									</ul>
+								</li>
+				
+				
+							</ul>
+		</div>-->
+					</li>
+					<li>
+						<a href="#">
+							<span></span>
+							<span>主食</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span></span>
+							<span>面</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span></span>
+							<span>素食</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span></span>
+							<span>x孕妇</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span></span>
+							<span>产妇</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span></span>
+							<span>婴儿</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span></span>
+							<span>儿童</span>
+						</a>
+					</li>
+				</ul>
+				<p><a href="#">全部菜谱分类</a></p>
+			</div>
+			<div class="center floatleft">
+				<div class="center">
+		<div class="box_1">
+			<div class="box_a">
+				<img src="img/shouye/lunbo.jpg" alt="" />
+				<img src="img/shouye/lunbo1.jpg" alt="" />
+				<img src="img/shouye/a14.jpg" alt="" />
+				<img src="img/shouye/a17.jpg" alt="" />
+				<img src="img/shouye/a10.jpg" alt="" />
+			</div>
+			<div class="btn btn_1"><</div><div class="btn btn2">></div>
+			<!--<div class="list">
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>-->
+		</div>
+		<div class="box_2">
+			<h3>新秀菜谱&nbsp;&nbsp;<a href="#">全部</a></h3>
+			<div class="box-1">
+				<ul>
+					<li class="list1">
+						<ul>
+							<li>
+								<img src="img/shouye/l1.jpg" alt="" />
+								<span>挂面</span>
+							</li>
+							<li>
+								<img src="img/shouye/l2.jpg" alt="" />
+								<span>挂面</span>
+							</li>
+							<li>
+								<img src="img/shouye/l3.jpg" alt="" />
+								<span>挂面</span>
+							</li>
+						</ul>
+					</li>
+					<li class="list1">
+						<ul>
+							<li>
+								<img src="img/shouye/l4.jpg" alt="" />
+								<span>挂面</span>
+							</li>
+							<li>
+								<img src="img/shouye/l5.jpg" alt="" />
+								<span>挂面</span>
+							</li>
+							<li>
+								<img src="img/shouye/l6.jpg" alt="" />
+								<span>挂面</span>
+							</li>
+						</ul>
+					</li>
+					<li class="list1">
+						<ul>
+							<li>
+								<img src="img/shouye/l7.jpg" alt="" />
+								<span>挂面</span>
+							</li>
+							<li>
+								<img src="img/shouye/l8.jpg" alt="" />
+								<span>挂面</span>
+							</li>
+							<li>
+								<img src="img/shouye/l9.jpg" alt="" />
+								<span>挂面</span>
+							</li>
+						</ul>
+					</li>
+					<li class="list1">
+						<ul>
+							<li>
+								<img src="img/shouye/l10.jpg" alt="" />
+								<span>挂面</span>
+							</li>
+							<li>
+								<img src="img/shouye/l11.jpg" alt="" />
+								<span>挂面</span>
+							</li>
+							<li>
+								<img src="img/shouye/l12.jpg" alt="" />
+								<span>挂面</span>
+							</li>
+						</ul>
+					</li>
+					<li class="list1">
+						<ul>
+							<li>
+								<img src="img/shouye/l13.jpg" alt="" />
+								<span>挂面</span>
+							</li>
+							<li>
+								<img src="img/shouye/l14.jpg" alt="" />
+								<span>挂面</span>
+							</li>
+							<li>
+								<img src="img/shouye/l15.jpg" alt="" />
+								<span>挂面</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="box_3">
+			<h3>最新流行&nbsp;&nbsp;<a href="#">全部</a></h3>
+			<ul>
+				<li>
+					<a href="">
+						<img src="img/shouye/liuxing (9).jpg" alt="" />
+						<span class="pt">
+							素炒三样
+						</span>
+						<div>
+							<span class="ellipsis">E路拾缘</span> &nbsp;&nbsp;&nbsp;&nbsp;<span>184&nbsp;做过</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img/shouye/liuxing (1).jpg" alt="" />
+						<span class="pt">
+							素炒三样
+						</span>
+						<div>
+							<span class="ellipsis">E路拾缘</span> &nbsp;&nbsp;&nbsp;&nbsp;<span>184&nbsp;做过</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img/shouye/liuxing (2).jpg" alt="" />
+						<span class="pt">
+							素炒三样
+						</span>
+						<div>
+							<span class="ellipsis">E路拾缘</span> &nbsp;&nbsp;&nbsp;&nbsp;<span>184&nbsp;做过</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img/shouye/liuxing (3).jpg" alt="" />
+						<span class="pt">
+							素炒三样
+						</span>
+						<div>
+							<span class="ellipsis">E路拾缘</span> &nbsp;&nbsp;&nbsp;&nbsp;<span>184&nbsp;做过</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img/shouye/liuxing (4).jpg" alt="" />
+						<span class="pt">
+							素炒三样
+						</span>
+						<div>
+							<span class="ellipsis">E路拾缘</span> &nbsp;&nbsp;&nbsp;&nbsp;<span>184&nbsp;做过</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img/shouye/liuxing (5).jpg" alt="" />
+						<span class="pt">
+							素炒三样
+						</span>
+						<div>
+							<span class="ellipsis">E路拾缘</span> &nbsp;&nbsp;&nbsp;&nbsp;<span>184&nbsp;做过</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img/shouye/liuxing (6).jpg" alt="" />
+						<span class="pt">
+							素炒三样
+						</span>
+						<div>
+							<span class="ellipsis">E路拾缘</span> &nbsp;&nbsp;&nbsp;&nbsp;<span>184&nbsp;做过</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img/shouye/liuxing (7).jpg" alt="" />
+						<span class="pt">
+							素炒三样
+						</span>
+						<div>
+							<span class="ellipsis">E路拾缘</span> &nbsp;&nbsp;&nbsp;&nbsp;<span>184&nbsp;做过</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img/shouye/liuxing (8).jpg" alt="" />
+						<span class="pt">
+							素炒三样
+						</span>
+						<div>
+							<span class="ellipsis">E路拾缘</span> &nbsp;&nbsp;&nbsp;&nbsp;<span>184&nbsp;做过</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img/shouye/liuxing (10).jpg" alt="" />
+						<span class="pt">
+							素炒三样
+						</span>
+						<div>
+							<span class="ellipsis">E路拾缘</span> &nbsp;&nbsp;&nbsp;&nbsp;<span>184&nbsp;做过</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img/shouye/liuxing (11).jpg" alt="" />
+						<span class="pt">
+							素炒三样
+						</span>
+						<div>
+							<span class="ellipsis">E路拾缘</span> &nbsp;&nbsp;&nbsp;&nbsp;<span>184&nbsp;做过</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img/shouye/liuxing (12).jpg" alt="" />
+						<span class="pt">
+							素炒三样
+						</span>
+						<div>
+							<span class="ellipsis">E路拾缘</span> &nbsp;&nbsp;&nbsp;&nbsp;<span>184&nbsp;做过</span>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="box_4">
+			<h3>厨房问答&nbsp;&nbsp;<a href="#">全部</a><a href="#">发起话题</a></h3>
+			<ul>
+				<li>新手需要买哪些烘焙模具？<span> 7 &nbsp;&nbsp;参与</span></li>
+				<li>夏天气温太高，做些什么蛋糕比较方便？ <span>5&nbsp;&nbsp; 参与</span></li>
+				<li>发酵好的面团擀开后总是回缩是什么原因？ <span>3 &nbsp;&nbsp;参与</span></li>
+				<li>我想买一个智能烤箱，哪个牌子的好用一些呢？ <span>5 &nbsp;&nbsp;参与</span></li>
+				<li>微波炉加热饭菜，怎样才能最大还原口感呢？<span> 4 &nbsp;&nbsp;参与</span></li>
+			</ul>
+		</div>
+		<div class="box_5">
+			<h3>时令食材&nbsp;&nbsp;<a href="#">全部</a></h3>
+			<ul>
+				<li>
+					<a href="#">
+						<img src="img/shouye/p1.jpg" alt="" />
+						<span>龙虾</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/shouye/p2.jpg" alt="" />
+						<span>小龙虾</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/shouye/p3.jpg" alt="" />
+						<span>樱桃</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/shouye/p4.jpg" alt="" />
+						<span>毛豆</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/shouye/p5.jpg" alt="" />
+						<span>杨梅</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/shouye/p6.jpg" alt="" />
+						<span>鸭腿</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/shouye/p7.jpg" alt="" />
+						<span>干贝</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/shouye/p8.jpg" alt="" />
+						<span>火龙果</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/shouye/p9.jpg" alt="" />
+						<span>榴莲</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/shouye/p10.jpg" alt="" />
+						<span>鸡爪</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/shouye/p11.jpg" alt="" />
+						<span>苦瓜</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/shouye/p12.jpg" alt="" />
+						<span>西瓜</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		
+	</div>
+			</div>
+		<div class="clearbox"></div>
+		<div class="bottom">
+			<div class="name">
+				<h2>参照 &nbsp;&nbsp;<span>781014</span>&nbsp; &nbsp;菜谱，大家做出  &nbsp;&nbsp;<span>30124582</span> &nbsp; &nbsp;作品</h2>
+				<ul>
+					<li><a href="work_trends_mini.html">最新上传</a></li>
+					<li><a href="work_trends_mini.html">正在流行</a></li>
+					<li><a href="work_trends_mini.html">24小时最佳</a></li>
+				</ul>
+			</div>
+			<div class="bottom_1">
+				<ul>
+					<li>
+						<div class="box1">
+							<span>#爱上夏天的理由#</span>
+							<div>四季独爱夏&nbsp;&nbsp;因为有西瓜刨冰汽水儿烧烤冰淇淋啊！！！！</div>
+						</div>
+						<div class="box2">
+							<img src="img/shouye/1.jpg" alt="" />
+							<img src="img/shouye/2.jpg" alt="" />
+							<img src="img/shouye/3.jpg" alt="" />
+						</div>
+					</li>
+					<li>
+						<div class="box1">
+							<span>#爱上夏天的理由#</span>
+							<div>四季独爱夏&nbsp;&nbsp;因为有西瓜刨冰汽水儿烧烤冰淇淋啊！！！！</div>
+						</div>
+						<div class="box2">
+							<img src="img/shouye/4.jpg" alt="" />
+							<img src="img/shouye/5.jpg" alt="" />
+							<img src="img/shouye/6.jpg" alt="" />
+						</div>
+					</li>
+					<li>
+						<div class="box1">
+							<span>#爱上夏天的理由#</span>
+							<div>四季独爱夏&nbsp;&nbsp;因为有西瓜刨冰汽水儿烧烤冰淇淋啊！！！！</div>
+						</div>
+						<div class="box2">
+							<img src="img/shouye/7h.jpg" alt="" />
+							<img src="img/shouye/8.jpg" alt="" />
+							<img src="img/shouye/9.jpg" alt="" />
+						</div>
+					</li>
+					<li>
+						<div class="box1">
+							<span>#爱上夏天的理由#</span>
+							<div>四季独爱夏&nbsp;&nbsp;因为有西瓜刨冰汽水儿烧烤冰淇淋啊！！！！</div>
+						</div>
+						<div class="box2">
+							<img src="img/shouye/10.jpg" alt="" />
+							<img src="img/shouye/11.jpg" alt="" />
+							<img src="img/shouye/12.jpg" alt="" />
+						</div>
+					</li>
+					<li>
+						<div class="box1">
+							<span>#爱上夏天的理由#</span>
+							<div>四季独爱夏&nbsp;&nbsp;因为有西瓜刨冰汽水儿烧烤冰淇淋啊！！！！</div>
+						</div>
+						<div class="box2">
+							<img src="img/shouye/13.jpg" alt="" />
+							<img src="img/shouye/14.jpg" alt="" />
+							<img src="img/shouye/15.jpg" alt="" />
+						</div>
+					</li>
+					<li>
+						<div class="box1">
+							<span>#爱上夏天的理由#</span>
+							<div>四季独爱夏&nbsp;&nbsp;因为有西瓜刨冰汽水儿烧烤冰淇淋啊！！！！</div>
+						</div>
+						<div class="box2">
+							<img src="img/shouye/16.jpg" alt="" />
+							<img src="img/shouye/17.jpg" alt="" />
+							<img src="img/shouye/18.jpg" alt="" />
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+		</div>
+		</div>
+		<div class="right floatright">
+		<div class="denglu">
+			<ul>
+				<li><a href="#">QQ&nbsp;登录</a></li>
+				<li><a href="#">微博登录</a></li>
+				<li><a href="#">手机/邮箱登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">注册</a></li>
+			</ul>
+		</div>
+		<div class="sou">
+			<h3>流行菜单</h3>
+			<ul>
+				<li>
+					<a href="#"><span>1</span>&nbsp;&nbsp;小龙虾</a>
+				</li>
+				<li>
+					<a href="#"><span>2</span>&nbsp;&nbsp;绿豆糕</a>
+				</li>
+				<li>
+					<a href="#"><span>3</span>&nbsp;&nbsp;茄子</a>
+				</li>
+				<li>
+					<a href="#"><span>4</span>&nbsp;&nbsp;冰淇淋</a>
+				</li>
+				<li>
+					<a href="#"><span>5</span>&nbsp;&nbsp;土豆</a>
+				</li>
+				<li>
+					<a href="#"><span>6</span>&nbsp;&nbsp;蛋糕</a>
+				</li>
+				<li>
+					<a href="#"><span>7</span>&nbsp;&nbsp;汤</a>
+				</li>
+				<li>
+					<a href="#"><span>8</span>&nbsp;&nbsp;红烧肉</a>
+				</li>
+				<li>
+					<a href="#"><span>9</span>&nbsp;&nbsp;汤类</a>
+				</li>
+				<li>
+					<a href="#"><span>10</span>&nbsp;&nbsp;糖醋排骨</a>
+				</li>
+			</ul>
+		</div>
+		<div class="st">
+			<h3>新秀菜谱&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">全部</a></h3>
+			<ul>
+				<li>
+					<a href="#"><img src="img/shouye/lx (2).jpg" alt="" />
+					<br />
+					<span>蒸蒸更健康的菜</span>
+					</a>
+				</li>
+				<li>
+					<a href="#"><img src="img/shouye/lx (3).jpg" alt="" />
+					<br />
+					<span>蒸蒸更健康的菜</span>
+					</a>
+				</li>
+				<li>
+					<a href="#"><img src="img/shouye/lx (4).jpg" alt="" />
+					<br />
+					<span>蒸蒸更健康的菜</span>
+					</a>
+				</li>
+				<li>
+					<a href="#"><img src="img/shouye/lx (1).jpg" alt="" />
+					<br />
+					<span>蒸蒸更健康的菜</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="box_v">
+			<h3>下厨房的厨友们&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">更多</a></h3>
+			<ul>
+				<li>
+					<div>
+						<a href="work_trends.html"><img src="img/shouye/t1.jpg" alt="" /></a>
+						<div>
+							<a href="work_trends.html">居然</a><br />
+							<span>1287&nbsp;关注</span><br />
+							<span>81&nbsp;个菜谱&nbsp;&nbsp;536&nbsp;个作品</span>
+						</div>
+						<a href="#">关注</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="#"><img src="img/shouye/t1.jpg" alt="" /></a>
+						<div>
+							<a href="#">淡淡小小厨</a><br />
+							<span>1287&nbsp;关注</span><br />
+							<span>81&nbsp;个菜谱&nbsp;&nbsp;536&nbsp;个作品</span>
+						</div>
+						<a href="#">关注</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="#"><img src="img/shouye/t1.jpg" alt="" /></a>
+						<div>
+							<a href="#">淡淡小小厨</a><br />
+							<span>1287&nbsp;关注</span><br />
+							<span>81&nbsp;个菜谱&nbsp;&nbsp;536&nbsp;个作品</span>
+						</div>
+						<a href="#">关注</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="#"><img src="img/shouye/t1.jpg" alt="" /></a>
+						<div>
+							<a href="#">淡淡小小厨</a><br />
+							<span>1287&nbsp;关注</span><br />
+							<span>81&nbsp;个菜谱&nbsp;&nbsp;536&nbsp;个作品</span>
+						</div>
+						<a href="#">关注</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="#"><img src="img/shouye/t1.jpg" alt="" /></a>
+						<div>
+							<a href="#">淡淡小小厨</a><br />
+							<span>1287&nbsp;关注</span><br />
+							<span>81&nbsp;个菜谱&nbsp;&nbsp;536&nbsp;个作品</span>
+						</div>
+						<a href="#">关注</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="#"><img src="img/shouye/t1.jpg" alt="" /></a>
+						<div>
+							<a href="#">淡淡小小厨</a><br />
+							<span>1287&nbsp;关注</span><br />
+							<span>81&nbsp;个菜谱&nbsp;&nbsp;536&nbsp;个作品</span>
+						</div>
+						<a href="#">关注</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="#"><img src="img/shouye/t1.jpg" alt="" /></a>
+						<div>
+							<a href="#">淡淡小小厨</a><br />
+							<span>1287&nbsp;关注</span><br />
+							<span>81&nbsp;个菜谱&nbsp;&nbsp;536&nbsp;个作品</span>
+						</div>
+						<a href="#">关注</a>
+					</div>
+				</li>
+			</ul>
+			<p><a href="#">查看更多</a></p>
+		</div>
+	</div>
+	</div>
+	<!--<div class="clearbox"></div>
+	-->
+	<footer>
+				<div class="webbottom">
+					<div class="b-content">
+						<div class="b-content-t">
+							<a href="#">入驻下厨房市集</a>
+							<a href="#">广告合作</a>
+						</div>
+						<div class="b-content-c">
+							<ul>
+								<li><a href="#">美食生活杂志</a></li>
+								<li><a href="#">厨房工作</a></li>
+								<li><a href="#">社区指导原则</a></li>
+								<li><a href="#">下厨房出版的书</a></li>
+								<li><a href="#">帮助中心</a></li>
+								<li><a href="#">联系我们</a></li>
+								<li><a href="#">意见反馈</a></li>
+								<li><a href="#">隐私声明</a></li>
+							</ul>
+							<div class="lx">
+								<a href="#">
+									<span></span>
+									加关注
+								</a>
+								<a href="#">389万</a>
+							</div>
+						</div>
+						<div class="b-content-b">
+							<div class="addr">
+								Copyright &copy; xiachufang.com
+								<a href="#">京ICP备13009078号-1</a>
+								京公网安备11010802022310号
+							</div>
+							<div class="ms">唯有美食与爱不可辜负</div>
+						</div>
+					</div>
+				</div>
+		</footer>
+		
+</body>
+
+</html>

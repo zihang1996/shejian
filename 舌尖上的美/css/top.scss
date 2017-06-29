@@ -1,0 +1,75 @@
+.top{
+   width: 100%; 
+   border-bottom: 1px solid #999;
+   background: #fff;
+   position: fixed;
+   top: 0;
+   height: 70px;
+   z-index: 99;
+   .top_1{
+       width: 1200px;
+       margin: 0 auto;
+       line-height: 70px;
+       img{
+             position: relative;
+             top: 15px;
+             cursor: pointer;
+           }
+       .txt{
+           height: 50px;
+           width: 300px;
+       }
+       .btn1{
+           height: 50px;
+           width: 100px;
+           background: #DD3915;
+           background-repeat:no-repeat;
+            border-top-style: none;
+            border-right-style: none;
+            border-bottom-style: none;
+            border-left-style: none;
+            color: #fff;
+            cursor: pointer;
+            position: relative;
+            right: 6px;
+            
+       }
+       .top_2{
+           width: 600px;
+           height: 70px;
+           float: right;
+           
+          // background: #666666;
+          .list_1{
+              li{
+                  float: left;
+                  width: 70px;
+                  height: 70px;
+                  text-align: center;
+                  line-height: 70px;
+                  color: #DD3915;
+                  //cursor: pointer;
+                  &:hover a{
+                      color: #FFFFFF;
+                      background: #DD3915;
+                  }
+              }
+          }
+          .list_2{
+              li{
+                  width: 70px;
+                  height: 70px;
+                  text-align: center;
+                  line-height: 70px;
+                  color: #DD3915;
+                  float: right;
+                  //cursor: pointer;
+                  &:hover a{
+                      color: #FFFFFF;
+                      background: #DD3915;
+                  }
+              }
+          }
+        }
+    }
+}

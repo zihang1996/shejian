@@ -1,0 +1,71 @@
+@mixin pos($p:absolute){
+    position:$p;
+}
+%fleft{
+    float:left;
+}
+%fright{
+    float:right;
+}
+.t-nav-dl{
+    @include pos();
+    left:1000px;
+    top:20px;
+    &>li{ 
+        @extend %fleft;
+        margin:0 5px 0;
+        @include pos(relative);
+        &:nth-child(1) >a{
+            display:inline-block;
+            width:35px;
+            height:60px; 
+            margin:0 20px 0 -40px;
+            i{
+                display:inline-block;
+                width:35px;
+                height:35px; border-radius:50%;
+                background:url(../img/dlimg/afaa5454795811e681ba79fa6f489dbf.png)no-repeat;
+                background-size:100% 100%;
+            }
+           
+           
+            
+        }
+        &:nth-child(2) a{
+            display:inline-block;
+            width:30px;
+            height:30px;
+            margin:0 0 0 20px;
+            @include pos(relative);
+            i{
+                display:inline-block;
+                font-size: 50px;
+                @include pos();
+                top:-13px;
+            }
+        }
+        ul{
+            @include pos();
+            width:100px;
+            left:-60px;
+            top:60px;
+            background:#fff;
+            color:#DD3915;
+            display:none;
+            li{
+                width:100%;
+                text-align:center;
+                a{
+                    display:inline-block;
+                    color:#DD3915;
+                    text-align:center;
+                    &:hover{
+                        background:#DD3915;
+                        color:#fff;
+                    }
+                }
+            }
+        }
+    }
+    
+}

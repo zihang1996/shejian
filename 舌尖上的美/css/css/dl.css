@@ -1,0 +1,14 @@
+.t-nav-dl > li { float: left; }
+
+.t-nav-dl { position: absolute; left: 1000px; top: 20px; }
+.t-nav-dl > li { margin: 0 5px 0; position: relative; }
+.t-nav-dl > li:nth-child(1) > a { display: inline-block; width: 35px; height: 60px; margin: 0 20px 0 -40px; }
+.t-nav-dl > li:nth-child(1) > a i { display: inline-block; width: 35px; height: 35px; border-radius: 50%; background: url(../img/dlimg/afaa5454795811e681ba79fa6f489dbf.png) no-repeat; background-size: 100% 100%; }
+.t-nav-dl > li:nth-child(2) a { display: inline-block; width: 30px; height: 30px; margin: 0 0 0 20px; position: relative; }
+.t-nav-dl > li:nth-child(2) a i { display: inline-block; font-size: 50px; position: absolute; top: -13px; }
+.t-nav-dl > li ul { position: absolute; width: 100px; left: -60px; top: 60px; background: #fff; color: #DD3915; display: none; }
+.t-nav-dl > li ul li { width: 100%; text-align: center; }
+.t-nav-dl > li ul li a { display: inline-block; color: #DD3915; text-align: center; }
+.t-nav-dl > li ul li a:hover { background: #DD3915; color: #fff; }
+
+/*# sourceMappingURL=dl.css.map */

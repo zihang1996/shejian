@@ -1,0 +1,71 @@
+* { margin: 0; padding: 0; }
+
+li { list-style: none; }
+
+a { text-decoration: none; }
+
+.topnav { width: 100%; height: 70px; background: #fff; position: fixed; left: 0; top: 0; box-shadow: 0 1px 1px #ccc; z-index: 999; }
+.topnav .mini_nav { width: 1200px; height: 70px; margin: 0 auto; line-height: 70px; position: relative; }
+.topnav .mini_nav .logo { width: 120px; height: 40px; margin: 15px 55px 15px 0; float: left; }
+.topnav .mini_nav .logo img { width: 120px; height: 40px; }
+.topnav .mini_nav .search { width: 380px; height: 40px; padding: 15px 44px 15px 0; line-height: 40px; float: left; }
+.topnav .mini_nav .search input { width: 300px; height: 40px; font-size: 16px; vertical-align: middle; box-sizing: border-box; }
+.topnav .mini_nav .search .sou_btn { display: inline-block; width: 80px; height: 40px; background: #DD3915; color: white; text-align: center; line-height: 40px; vertical-align: middle; border-color: red; }
+.topnav .mini_nav ul { width: 280px; height: 70px; float: left; }
+.topnav .mini_nav ul li { height: 70px; line-height: 70px; float: left; margin-right: 20px; }
+.topnav .mini_nav ul li a { padding: 5px 0; color: #DD3915; }
+.topnav .mini_nav .show { position: absolute; top: 60px; right: 100px; width: 395px; height: 375px; background: #eee; z-index: 999; display: none; }
+.topnav .mini_nav .show .show_tit { display: flex; }
+.topnav .mini_nav .show .show_tit ul { width: 385px; height: 325px; flex: 1; display: flex; flex-direction: column; border-bottom: 1px #fff solid; }
+.topnav .mini_nav .show .show_tit ul li { text-align: center; height: 30px; color: #ccc; }
+.topnav .mini_nav .show .show_tit ul li a { padding: 5px 0; color: #DD3915; }
+.topnav .mini_nav .show .show_more { width: 385; height: 50px; text-align: center; line-height: 50px; }
+.topnav .mini_nav .show .show_more a { color: #DD3915; }
+.topnav .mini_nav .login { height: 70px; float: right; }
+.topnav .mini_nav .login span { margin-left: 12px; }
+.topnav .mini_nav .login span a { padding: 5px 0; color: #DD3915; }
+
+.content { width: 100%; height: 690px; padding-top: 70px; }
+.content .mini_content { width: 1200px; height: 100%; margin: 0 auto; }
+.content .mini_content .content_left { width: 660px; height: 100%; float: left; }
+.content .mini_content .content_left .content_left_tit { width: 660px; height: 50px; margin-top: 30px; }
+.content .mini_content .content_left .content_left_tit span { display: inline-block; text-align: center; line-height: 50px; }
+.content .mini_content .content_left .content_left_tit span:nth-child(1) { width: 140px; background: #DD3916; color: white; }
+.content .mini_content .content_left .content_left_tit span:nth-child(2) { width: 100px; margin: 0 1px; background: #eee; }
+.content .mini_content .content_left .content_left_tit span:nth-child(3) { width: 408px; background: #eee; }
+.content .mini_content .content_left p { line-height: 90px; }
+.content .mini_content .content_left .content_user { padding: 0 65px 0 30px; display: flex; justify-content: space-between; flex-wrap: wrap; }
+.content .mini_content .content_left .content_user li { width: 250px; height: 60px; margin-bottom: 15px; }
+.content .mini_content .content_left .content_user li .user_pic { border-radius: 30px; float: left; }
+.content .mini_content .content_left .content_user li .user_pic img { width: 60px; height: 60px; }
+.content .mini_content .content_left .content_user li .user_txt { width: 175px; height: 60px; float: right; }
+.content .mini_content .content_left .content_user li .user_txt .txt_perv { width: 100%; height: 40px; }
+.content .mini_content .content_left .content_user li .user_txt .txt_perv div:nth-child(1) { width: 95px; height: 40px; float: left; }
+.content .mini_content .content_left .content_user li .user_txt .txt_perv div:nth-child(1) span:nth-child(1) { font-size: 15px; display: block; }
+.content .mini_content .content_left .content_user li .user_txt .txt_perv div:nth-child(1) span:nth-child(1) span { display: inline-block; }
+.content .mini_content .content_left .content_user li .user_txt .txt_perv div:nth-child(1) span:nth-child(2) { font-size: 12px; color: #ccc; }
+.content .mini_content .content_left .content_user li .user_txt .txt_perv div:nth-child(2) { width: 80px; height: 40px; background: #DD3914; color: white; float: right; text-align: center; line-height: 40px; }
+.content .mini_content .content_left .content_user li .user_txt .txt_next { width: 100%; height: 20px; }
+.content .mini_content .content_left .content_user li .user_txt .txt_next span { margin-right: 5px; font-size: 12px; color: #ccc; }
+.content .mini_content .content_right { width: 300px; height: 100%; float: right; }
+.content .mini_content .content_right div { width: 100%; height: 60px; background: #eee; margin-bottom: 40px; line-height: 60px; color: #E0390F; }
+.content .mini_content .content_right div:nth-child(1) { margin-top: 30px; }
+.content .mini_content .content_right div span { margin: 0 10px 0 20px; }
+
+.footer { width: 100%; height: 180px; }
+.footer .mini_footer { width: 1200px; height: 180px; margin: 0 auto; }
+.footer .mini_footer .footer_one { width: 100%; height: 40px; padding: 60px 0 30px 0; }
+.footer .mini_footer .footer_one a { display: inline-block; margin-right: 20px; text-align: center; line-height: 40px; background: #84CF6D; font-size: 14px; padding: 5px 20px; color: white; }
+.footer .mini_footer .copy { width: 100%; height: 80px; }
+.footer .mini_footer .copy .copy_left { width: 600px; height: 80px; float: left; }
+.footer .mini_footer .copy .copy_left ul { width: 600px; }
+.footer .mini_footer .copy .copy_left ul li { font-size: 13px; margin-right: 10px; float: left; color: #ccc; }
+.footer .mini_footer .copy .copy_left ul li a { color: #ccc; }
+.footer .mini_footer .copy .copy_left p { font-size: 13px; margin-top: 20px; color: #ccc; }
+.footer .mini_footer .copy .copy_right { width: 150px; height: 60px; float: right; font-size: 13px; }
+.footer .mini_footer .copy .copy_right a:nth-of-type(1) { display: inline-block; padding: 5px; background: #eee; border: 1px #ccc solid; color: #1582BD; }
+.footer .mini_footer .copy .copy_right span:nth-of-type(1) { color: #FAF8EF; }
+.footer .mini_footer .copy .copy_right a:nth-of-type(2) { padding: 3px 8px; background: #FAF8EF; border: 1px yellow solid; font-size: 13px; color: black; }
+.footer .mini_footer .copy .copy_right p { margin-top: 5px; }
+
+/*# sourceMappingURL=index3.css.map */

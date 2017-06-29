@@ -1,0 +1,29 @@
+.cd-u li div:nth-child(2) p:nth-child(1) a { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
+
+.cd1 { width: 100%; }
+.cd1 li { width: 100%; height: 38px; line-height: 38px; }
+.cd1 li:nth-child(1) { color: #ccc; padding: 0 0 0 45px; }
+.cd1 li a { padding: 0 0 0 45px; display: inline-block; }
+.cd1 li a:hover { color: #DD3915; }
+.cd1 li.open { background: #EBE9E7; }
+
+.cd-u { width: 100%; }
+.cd-u li { width: 100%; height: 138px; margin: 0 0 20px; }
+.cd-u li div { width: 100%; height: 138px; float: left; }
+.cd-u li div:nth-child(1) { width: 215px; height: 136px; }
+.cd-u li div:nth-child(2) { margin: 0 0 0 10px; width: 300px; height: 136px; }
+.cd-u li div:nth-child(2) p { margin: 10px 0; }
+.cd-u li div:nth-child(2) p a { display: inline-block; }
+.cd-u li div:nth-child(2) p a:hover { color: #DD3915; }
+.cd-u li div:nth-child(2) p:nth-child(1) { font-size: 20px; font-weight: 700; }
+.cd-u li div:nth-child(2) p:nth-child(1) a { width: 100%; padding-right: 30px; }
+.cd-u li div:nth-child(2) p:nth-child(2), .cd-u li div:nth-child(2) p:nth-child(3) { color: #909090; }
+.cd-u li div:nth-child(2) p:not(:first-child) { font-size: 14px; }
+.cd-u li div:nth-child(2) p:nth-child(2) span { color: #72A46D; font-weight: 700; }
+
+.se-right { margin: 30px 0 0 50px; position: relative; padding: 0; }
+.se-right .r-title { position: relative; }
+.se-right .r-title h2 { position: absolute; left: -50px; }
+.se-right .r-title a { display: inline-block; position: absolute; right: -100px; }
+
+/*# sourceMappingURL=caidan.css.map */

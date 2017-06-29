@@ -1,0 +1,89 @@
+* { margin: 0; padding: 0; }
+
+li { list-style: none; }
+
+a { text-decoration: none; }
+
+.topnav { width: 100%; height: 70px; background: #fff; position: fixed; left: 0; top: 0; box-shadow: 0 1px 1px #ccc; z-index: 999; }
+.topnav .mini_nav { width: 1200px; height: 70px; margin: 0 auto; line-height: 70px; position: relative; }
+.topnav .mini_nav .logo { width: 120px; height: 40px; margin: 15px 55px 15px 0; float: left; }
+.topnav .mini_nav .logo img { width: 120px; height: 40px; }
+.topnav .mini_nav .search { width: 380px; height: 40px; padding: 15px 44px 15px 0; line-height: 40px; float: left; }
+.topnav .mini_nav .search input { width: 300px; height: 40px; font-size: 16px; vertical-align: middle; box-sizing: border-box; }
+.topnav .mini_nav .search .sou_btn { display: inline-block; width: 80px; height: 40px; background: #DD3915; color: white; text-align: center; line-height: 40px; vertical-align: middle; border-color: red; }
+.topnav .mini_nav ul { width: 280px; height: 70px; float: left; }
+.topnav .mini_nav ul li { height: 70px; line-height: 70px; float: left; margin-right: 20px; }
+.topnav .mini_nav ul li a { padding: 5px 0; color: #DD3915; }
+.topnav .mini_nav .show { position: absolute; top: 60px; right: 100px; width: 395px; height: 375px; background: #eee; z-index: 999; display: none; }
+.topnav .mini_nav .show .show_tit { display: flex; }
+.topnav .mini_nav .show .show_tit ul { width: 385px; height: 325px; flex: 1; display: flex; flex-direction: column; border-bottom: 1px #fff solid; }
+.topnav .mini_nav .show .show_tit ul li { text-align: center; height: 30px; color: #ccc; }
+.topnav .mini_nav .show .show_tit ul li a { padding: 5px 0; color: #DD3915; }
+.topnav .mini_nav .show .show_more { width: 385; height: 50px; text-align: center; line-height: 50px; }
+.topnav .mini_nav .show .show_more a { color: #DD3915; }
+.topnav .mini_nav .login { height: 70px; float: right; }
+.topnav .mini_nav .login span { margin-left: 12px; }
+.topnav .mini_nav .login span a { padding: 5px 0; color: #DD3915; }
+
+.content { width: 100%; height: 100%; padding-top: 70px; }
+.content .mini_content { width: 1200px; height: 100%; margin: 0 auto; }
+.content .mini_content .content_card { width: 1038px; height: 238px; padding: 30px 80px; }
+.content .mini_content .content_card .card_one { width: 100%; height: 160px; margin-bottom: 30px; }
+.content .mini_content .content_card .card_one img { width: 160px; height: 160px; border-radius: 80px; display: block; float: left; margin-right: 40px; }
+.content .mini_content .content_card .card_one .card_one_a { float: left; }
+.content .mini_content .content_card .card_one .card_one_a div span { margin-right: 12px; display: inline-block; font-size: 12px; color: #bbb; }
+.content .mini_content .content_card .card_one .card_one_a div div { font-size: 12px; color: coral; }
+.content .mini_content .content_card .card_one .card_one_b { float: right; }
+.content .mini_content .content_card .card_one .card_one_b div:nth-child(1) { width: 120px; height: 50px; margin: 0 0 60px 20px; background: #DD3914; text-align: center; line-height: 50px; color: white; }
+.content .mini_content .content_card .card_one .card_one_b div:nth-child(2) { width: 80px; height: 50px; background: #eee; float: left; text-align: center; }
+.content .mini_content .content_card .card_one .card_one_b div:nth-child(2) span { display: block; font-size: 12px; }
+.content .mini_content .content_card .card_one .card_one_b div:nth-child(2) span:nth-child(1) { margin-top: 6px; }
+.content .mini_content .content_card .card_one .card_one_b div:nth-child(2) span:nth-child(2) { color: #DD3914; }
+.content .mini_content .content_card .card_one .card_one_b div:nth-child(3) { width: 80px; height: 50px; background: #eee; float: left; text-align: center; }
+.content .mini_content .content_card .card_one .card_one_b div:nth-child(3) span { display: block; font-size: 12px; }
+.content .mini_content .content_card .card_one .card_one_b div:nth-child(3) span:nth-child(1) { margin-top: 6px; }
+.content .mini_content .content_card .card_one .card_one_b div:nth-child(3) span:nth-child(2) { color: #DD3914; }
+.content .mini_content .content_card .card_two { width: 100%; height: 50px; }
+.content .mini_content .content_card .card_two ul { list-style: none; line-height: 50px; }
+.content .mini_content .content_card .card_two ul li { height: 100%; float: left; margin-right: 2px; background: #eee; }
+.content .mini_content .content_card .card_two ul li:last-child { width: 549px; height: 50px; float: right; }
+.content .mini_content .content_card .card_two ul li a { padding: 15px 30px; color: black; }
+.content .mini_content .content_tit { width: 1200px; height: 95px; line-height: 95px; }
+.content .mini_content .content_mintit { width: 305px; height: 40px; line-height: 40px; }
+.content .mini_content .content_mintit span a { color: #BF3B23; padding: 10px 15px; }
+.content .mini_content .content_pics { width: 1200px; height: 100%; display: flex; justify-content: space-between; flex-wrap: wrap; }
+.content .mini_content .content_pics li { width: 380px; height: 500px; margin: 15px 0; border: 1px #eee solid; position: relative; }
+.content .mini_content .content_pics li img { width: 380px; height: 280px; }
+.content .mini_content .content_pics li .defilade { width: 380px; height: 280px; position: absolute; left: 0; top: 0; z-index: 998; background: black; opacity: 0.6; display: none; pointer-events: none; }
+.content .mini_content .content_pics li .defilade .defilade_mini { padding: 10px 20px; background: #DD3914; color: white; border-radius: 5px; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 999; }
+.content .mini_content .content_pics li .defilade .defilade_mini span:nth-child(1) { margin-right: 20px; }
+.content .mini_content .content_pics li .content_txt { padding: 0 10px; }
+.content .mini_content .content_pics li .content_txt a { display: block; line-height: 50px; text-align: left; color: #BF3B23; }
+.content .mini_content .content_pics li .content_txt p { font-size: 12px; line-height: 20px; }
+.content .mini_content .content_pics li .content_txt div:nth-of-type(1) { margin: 15px 0; font-size: 12px; float: left; }
+.content .mini_content .content_pics li .content_txt div:nth-of-type(2) { margin: 15px 0; font-size: 12px; float: right; }
+.content .mini_content .content_pics li .content_txt div:nth-of-type(2) span { margin-left: 10px; }
+.content .mini_content .content_pics li .clear_float { clear: both; }
+.content .mini_content .content_pics li .content_user { width: 100%; }
+.content .mini_content .content_pics li .content_user img { width: 30px; height: 30px; border-radius: 15px; vertical-align: middle; margin: 0 5px; }
+.content .mini_content .content_pics li .content_user a { color: black; font-size: 12px; }
+.content .mini_content .content_pics li .content_user a span { font-size: 12px; vertical-align: middle; }
+.content .mini_content .content_pics li .content_user span { font-size: 12px; }
+
+.footer { width: 100%; height: 250px; }
+.footer .mini_footer { width: 1200px; height: 250px; margin: 0 auto; }
+.footer .mini_footer .footer_one { width: 100%; height: 40px; padding: 60px 0 30px 0; }
+.footer .mini_footer .footer_one a { display: inline-block; margin-right: 20px; text-align: center; line-height: 40px; background: #84CF6D; font-size: 14px; padding: 5px 20px; color: white; }
+.footer .mini_footer .copy { width: 100%; height: 80px; }
+.footer .mini_footer .copy .copy_left { width: 600px; height: 80px; float: left; }
+.footer .mini_footer .copy .copy_left ul { width: 600px; }
+.footer .mini_footer .copy .copy_left ul li { font-size: 13px; margin-right: 10px; float: left; color: #ccc; }
+.footer .mini_footer .copy .copy_left ul li a { color: #ccc; }
+.footer .mini_footer .copy .copy_left p { font-size: 13px; margin-top: 20px; color: #ccc; }
+.footer .mini_footer .copy .copy_right { width: 150px; height: 60px; float: right; font-size: 13px; }
+.footer .mini_footer .copy .copy_right a:nth-of-type(1) { display: inline-block; padding: 5px; background: #eee; border: 1px #ccc solid; color: #1582BD; }
+.footer .mini_footer .copy .copy_right span:nth-of-type(1) { color: #FAF8EF; }
+.footer .mini_footer .copy .copy_right a:nth-of-type(2) { padding: 3px 8px; background: #FAF8EF; border: 1px yellow solid; font-size: 13px; color: black; }
+.footer .mini_footer .copy .copy_right p { margin-top: 5px; }
+
+/*# sourceMappingURL=index2.css.map */

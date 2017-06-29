@@ -1,0 +1,15 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+input, button { list-style-type: none; }
+
+li { list-style: none; }
+
+a { text-decoration: none; color: #DD3915; }
+
+.floatleft { float: left; }
+
+.floatright { float: right; }
+
+.clearbox { content: " "; display: block; clear: both; }
+
+/*# sourceMappingURL=style.css.map */
