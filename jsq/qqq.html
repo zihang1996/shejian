@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<script src="js/jquery-1.11.1.js"></script>
+	</head>
+	<style>
+		*{
+			margin: 0;padding: 0;
+		}
+		input{
+			width: 40px;
+		}
+	</style>
+	<body>
+		<div>
+			长度：<input type="text" placeholder="长度" class="a" /><br />
+			<select class="e">
+				<option value="1">+</option>
+				<option value="2">-</option>
+				<option value="3">*</option>
+				<option value="4">/</option>
+			</select><br />
+			宽度：<input type="text" placeholder="宽度" class="b" /><br />
+			<input type="button" value="点击" class="d" /><br />
+			结果：<input type="text" class="c" />
+			<input type="button" value="清零" class="o" />
+		</div>
+	</body>
+	<script>
+		$(function(){
+				$(".d").bind('click',function(){
+					var a=parseFloat($(".a").val())
+					var b=parseFloat($(".b").val())
+					var value=$("option").val();
+					if(value==1){
+						var c=a+b;
+						
+					}else if(value==2){
+						var c=a-b;
+						
+					}else if(value==3){
+						var c=a*b;
+						
+					}else if(value==4){
+						var c=a/b;
+					}
+					$(".c").val(c);
+				})
+				$(".o").click(function(){
+					history.go(0);
+				})
+//				$(".d").click(function(){
+//					var a=parseFloat($(".a").val())
+//					var b=parseFloat($(".b").val())
+//					var value=$("option").val();
+//					switch(value){
+//						case 1:
+//						var c=a+b;
+//						$(".c").val(c);
+//						break;
+//						case 2:
+//						var c=a-b;
+//						$(".c").val(c);
+//						break;
+//						case 3:
+//						var c=a*b;
+//						$(".c").val(c);
+//						break;
+//						case 4:
+//						var c=a/b;
+//						$(".c").val(c);
+//						break;
+//					}
+//				})
+				
+		})
+	</script>
+</html>
